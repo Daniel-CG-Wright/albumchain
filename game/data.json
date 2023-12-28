@@ -1,0 +1,1389 @@
+[
+    {
+        "name": "Taylor Swift",
+        "allowedNames": [
+            "taylor swift",
+            "debut",
+            "self titled",
+            "selftitled"
+        ],
+        "songs": [
+            {
+                "name": "Tim McGraw",
+                "allowedNames": [
+                    "tim mcgraw"
+                ]
+            },
+            {
+                "name": "Picture to Burn",
+                "allowedNames": [
+                    "picture to burn"
+                ]
+            },
+            {
+                "name": "Teardrops on My Guitar",
+                "allowedNames": [
+                    "teardrops on my guitar",
+                    "teardrops on my guitar radio single remix",
+                    "teardrops on my guitar pop version",
+                    "teardrops on my guitar radio version",
+                    "teardrops on my guitar radio single"
+                ]
+            },
+            {
+                "name": "A Place in This World",
+                "allowedNames": [
+                    "a place in this world"
+                ]
+            },
+            {
+                "name": "Cold as You",
+                "allowedNames": [
+                    "cold as you",
+                    "cay"
+                ]
+            },
+            {
+                "name": "The Outside",
+                "allowedNames": [
+                    "the outside"
+                ]
+            },
+            {
+                "name": "Tied Together with a Smile",
+                "allowedNames": [
+                    "tied together with a smile"
+                ]
+            },
+            {
+                "name": "Stay Beautiful",
+                "allowedNames": [
+                    "stay beautiful"
+                ]
+            },
+            {
+                "name": "Should've Said No",
+                "allowedNames": [
+                    "shouldve said no"
+                ]
+            },
+            {
+                "name": "Mary's Song (Oh My My My)",
+                "allowedNames": [
+                    "marys song oh my my my",
+                    "marys song"
+                ]
+            },
+            {
+                "name": "Our Song",
+                "allowedNames": [
+                    "our song"
+                ]
+            },
+            {
+                "name": "I'm Only Me When I'm with You",
+                "allowedNames": [
+                    "im only me when im with you"
+                ]
+            },
+            {
+                "name": "Invisible",
+                "allowedNames": [
+                    "invisible"
+                ]
+            },
+            {
+                "name": "A Perfectly Good Heart",
+                "allowedNames": [
+                    "a perfectly good heart"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fearless",
+        "allowedNames": [
+            "fearless"
+        ],
+        "songs": [
+            {
+                "name": "Fearless",
+                "allowedNames": [
+                    "fearless"
+                ]
+            },
+            {
+                "name": "Fifteen",
+                "allowedNames": [
+                    "fifteen"
+                ]
+            },
+            {
+                "name": "Love Story",
+                "allowedNames": [
+                    "love story"
+                ]
+            },
+            {
+                "name": "Hey Stephen",
+                "allowedNames": [
+                    "hey stephen"
+                ]
+            },
+            {
+                "name": "White Horse",
+                "allowedNames": [
+                    "white horse"
+                ]
+            },
+            {
+                "name": "You Belong with Me",
+                "allowedNames": [
+                    "you belong with me",
+                    "ybwm"
+                ]
+            },
+            {
+                "name": "Breathe",
+                "allowedNames": [
+                    "breathe"
+                ]
+            },
+            {
+                "name": "Tell Me Why",
+                "allowedNames": [
+                    "tell me why"
+                ]
+            },
+            {
+                "name": "You're Not Sorry",
+                "allowedNames": [
+                    "youre not sorry"
+                ]
+            },
+            {
+                "name": "The Way I Loved You",
+                "allowedNames": [
+                    "the way i loved you",
+                    "twily"
+                ]
+            },
+            {
+                "name": "Forever & Always",
+                "allowedNames": [
+                    "forever and always",
+                    "forever always"
+                ]
+            },
+            {
+                "name": "The Best Day",
+                "allowedNames": [
+                    "the best day"
+                ]
+            },
+            {
+                "name": "Change",
+                "allowedNames": [
+                    "change"
+                ]
+            },
+            {
+                "name": "Jump Then Fall",
+                "allowedNames": [
+                    "jump then fall"
+                ]
+            },
+            {
+                "name": "Untouchable",
+                "allowedNames": [
+                    "untouchable"
+                ]
+            },
+            {
+                "name": "Forever & Always (Piano Version)",
+                "allowedNames": [
+                    "forever and always piano version",
+                    "forever always piano version",
+                    "forever and always piano",
+                    "forever always piano"
+                ]
+            },
+            {
+                "name": "Come in with the Rain",
+                "allowedNames": [
+                    "come in with the rain"
+                ]
+            },
+            {
+                "name": "SuperStar",
+                "allowedNames": [
+                    "superstar"
+                ]
+            },
+            {
+                "name": "The Other Side of the Door",
+                "allowedNames": [
+                    "the other side of the door",
+                    "tosotd"
+                ]
+            },
+            {
+                "name": "Today Was a Fairytale",
+                "allowedNames": [
+                    "today was a fairytale"
+                ]
+            },
+            {
+                "name": "You All Over Me",
+                "allowedNames": [
+                    "you all over me"
+                ]
+            },
+            {
+                "name": "Mr. Perfectly Fine",
+                "allowedNames": [
+                    "mr perfectly fine",
+                    "mister perfectly fine"
+                ]
+            },
+            {
+                "name": "We Were Happy",
+                "allowedNames": [
+                    "we were happy"
+                ]
+            },
+            {
+                "name": "That's When",
+                "allowedNames": [
+                    "thats when"
+                ]
+            },
+            {
+                "name": "Don't You",
+                "allowedNames": [
+                    "dont you"
+                ]
+            },
+            {
+                "name": "Bye Bye Baby",
+                "allowedNames": [
+                    "bye bye baby"
+                ]
+            },
+            {
+                "name": "If This Was a Movie (Taylor's Version)",
+                "allowedNames": [
+                    "if this was a movie taylors version",
+                    "if this was a movie taylor version",
+                    "if this was a movie taylors version",
+                    "if this was a movie taylor version",
+                    "itwamtv"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Speak Now",
+        "allowedNames": [
+            "speak now",
+            "the best album"
+        ],
+        "songs": [
+            {
+                "name": "Mine",
+                "allowedNames": [
+                    "mine",
+                    "the best song"
+                ]
+            },
+            {
+                "name": "Mine - POP Mix",
+                "allowedNames": [
+                    "mine pop mix"
+                ]
+            },
+            {
+                "name": "Sparks Fly",
+                "allowedNames": [
+                    "sparks fly"
+                ]
+            },
+            {
+                "name": "Back to December",
+                "allowedNames": [
+                    "back to december"
+                ]
+            },
+            {
+                "name": "Back to December - Acoustic",
+                "allowedNames": [
+                    "back to december acoustic"
+                ]
+            },
+            {
+                "name": "Speak Now",
+                "allowedNames": [
+                    "speak now"
+                ]
+            },
+            {
+                "name": "Dear John",
+                "allowedNames": [
+                    "dear john"
+                ]
+            },
+            {
+                "name": "Mean",
+                "allowedNames": [
+                    "mean"
+                ]
+            },
+            {
+                "name": "The Story of Us",
+                "allowedNames": [
+                    "the story of us"
+                ]
+            },
+            {
+                "name": "Never Grow Up",
+                "allowedNames": [
+                    "never grow up"
+                ]
+            },
+            {
+                "name": "Enchanted",
+                "allowedNames": [
+                    "enchanted"
+                ]
+            },
+            {
+                "name": "Better Than Revenge",
+                "allowedNames": [
+                    "better than revenge"
+                ]
+            },
+            {
+                "name": "Innocent",
+                "allowedNames": [
+                    "innocent"
+                ]
+            },
+            {
+                "name": "Haunted",
+                "allowedNames": [
+                    "haunted"
+                ]
+            },
+            {
+                "name": "Haunted - Acoustic Version",
+                "allowedNames": [
+                    "haunted acoustic version",
+                    "haunted acoustic"
+                ]
+            },
+            {
+                "name": "Last Kiss",
+                "allowedNames": [
+                    "last kiss"
+                ]
+            },
+            {
+                "name": "Long Live",
+                "allowedNames": [
+                    "long live"
+                ]
+            },
+            {
+                "name": "Ours",
+                "allowedNames": [
+                    "ours"
+                ]
+            },
+            {
+                "name": "If This Was a Movie",
+                "allowedNames": [
+                    "if this was a movie"
+                ]
+            },
+            {
+                "name": "Superman",
+                "allowedNames": [
+                    "superman",
+                    "super man"
+                ]
+            },
+            {
+                "name": "Electric Touch",
+                "allowedNames": [
+                    "electric touch"
+                ]
+            },
+            {
+                "name": "When Emma Falls In Love",
+                "allowedNames": [
+                    "when emma falls in love"
+                ]
+            },
+            {
+                "name": "I Can See You",
+                "allowedNames": [
+                    "i can see you"
+                ]
+            },
+            {
+                "name": "Castles Crumbling",
+                "allowedNames": [
+                    "castles crumbling"
+                ]
+            },
+            {
+                "name": "Foolish One",
+                "allowedNames": [
+                    "foolish one"
+                ]
+            },
+            {
+                "name": "Timeless",
+                "allowedNames": [
+                    "timeless"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Red",
+        "allowedNames": [
+            "red"
+        ],
+        "songs": [
+            {
+                "name": "State of Grace",
+                "allowedNames": [
+                    "state of grace"
+                ]
+            },
+            {
+                "name": "Red",
+                "allowedNames": [
+                    "red"
+                ]
+            },
+            {
+                "name": "Treacherous",
+                "allowedNames": [
+                    "treacherous"
+                ]
+            },
+            {
+                "name": "I Knew You Were Trouble",
+                "allowedNames": [
+                    "i knew you were trouble",
+                    "ikywt"
+                ]
+            },
+            {
+                "name": "All Too Well",
+                "allowedNames": [
+                    "all too well"
+                ]
+            },
+            {
+                "name": "22",
+                "allowedNames": [
+                    "22",
+                    "twenty two"
+                ]
+            },
+            {
+                "name": "I Almost Do",
+                "allowedNames": [
+                    "i almost do"
+                ]
+            },
+            {
+                "name": "We Are Never Ever Getting Back Together",
+                "allowedNames": [
+                    "we are never ever getting back together",
+                    "wanegbt"
+                ]
+            },
+            {
+                "name": "Stay Stay Stay",
+                "allowedNames": [
+                    "stay stay stay"
+                ]
+            },
+            {
+                "name": "The Last Time",
+                "allowedNames": [
+                    "the last time"
+                ]
+            },
+            {
+                "name": "Holy Ground",
+                "allowedNames": [
+                    "holy ground"
+                ]
+            },
+            {
+                "name": "Sad Beautiful Tragic",
+                "allowedNames": [
+                    "sad beautiful tragic"
+                ]
+            },
+            {
+                "name": "The Lucky One",
+                "allowedNames": [
+                    "the lucky one"
+                ]
+            },
+            {
+                "name": "Everything Has Changed",
+                "allowedNames": [
+                    "everything has changed"
+                ]
+            },
+            {
+                "name": "Starlight",
+                "allowedNames": [
+                    "starlight"
+                ]
+            },
+            {
+                "name": "Begin Again",
+                "allowedNames": [
+                    "begin again"
+                ]
+            },
+            {
+                "name": "The Moment I Knew",
+                "allowedNames": [
+                    "the moment i knew"
+                ]
+            },
+            {
+                "name": "Come Back... Be Here",
+                "allowedNames": [
+                    "come back be here"
+                ]
+            },
+            {
+                "name": "Girl At Home",
+                "allowedNames": [
+                    "girl at home"
+                ]
+            },
+            {
+                "name": "State Of Grace (Acoustic Version)",
+                "allowedNames": [
+                    "state of grace acoustic version",
+                    "state of grace acoustic"
+                ]
+            },
+            {
+                "name": "Better Man",
+                "allowedNames": [
+                    "better man"
+                ]
+            },
+            {
+                "name": "Nothing New",
+                "allowedNames": [
+                    "nothing new"
+                ]
+            },
+            {
+                "name": "Babe",
+                "allowedNames": [
+                    "babe"
+                ]
+            },
+            {
+                "name": "Message In A Bottle",
+                "allowedNames": [
+                    "message in a bottle"
+                ]
+            },
+            {
+                "name": "I Bet You Think About Me",
+                "allowedNames": [
+                    "i bet you think about me"
+                ]
+            },
+            {
+                "name": "Forever Winter",
+                "allowedNames": [
+                    "forever winter"
+                ]
+            },
+            {
+                "name": "Run",
+                "allowedNames": [
+                    "run"
+                ]
+            },
+            {
+                "name": "The Very First Night",
+                "allowedNames": [
+                    "the very first night",
+                    "tvfn"
+                ]
+            },
+            {
+                "name": "All Too Well (10 Minute Version)",
+                "allowedNames": [
+                    "all too well 10 minute version",
+                    "all too well 10 minute",
+                    "all too well 10 min version",
+                    "all too well 10 min",
+                    "all too well 10",
+                    "all too well ten minute version",
+                    "all too well ten minute",
+                    "all too well ten min version",
+                    "all too well ten min",
+                    "all too well ten",
+                    "atwtmv",
+                    "atwtmvtvftv",
+                    "atwtmvtvftvsgavralps"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "1989",
+        "allowedNames": [
+            "1989",
+            "nineteen eighty nine"
+        ],
+        "songs": [            
+            {
+                "name": "Welcome to New York",
+                "allowedNames": [
+                    "welcome to new york"
+                ]
+            },
+            {
+                "name": "Blank Space",
+                "allowedNames": [
+                    "blank space"
+                ]
+            },
+            {
+                "name": "Style",
+                "allowedNames": [
+                    "style"
+                ]
+            },
+            {
+                "name": "Out of the Woods",
+                "allowedNames": [
+                    "out of the woods"
+                ]
+            },
+            {
+                "name": "All You Had to Do Was Stay",
+                "allowedNames": [
+                    "all you had to do was stay",
+                    "ayhtdws"
+                ]
+            },
+            {
+                "name": "Shake It Off",
+                "allowedNames": [
+                    "shake it off"
+                ]
+            },
+            {
+                "name": "I Wish You Would",
+                "allowedNames": [
+                    "i wish you would"
+                ]
+            },
+            {
+                "name": "Bad Blood",
+                "allowedNames": [
+                    "bad blood"
+                ]
+            },
+            {
+                "name": "Wildest Dreams",
+                "allowedNames": [
+                    "wildest dreams"
+                ]
+            },
+            {
+                "name": "How You Get the Girl",
+                "allowedNames": [
+                    "how you get the girl"
+                ]
+            },
+            {
+                "name": "This Love",
+                "allowedNames": [
+                    "this love"
+                ]
+            },
+            {
+                "name": "I Know Places",
+                "allowedNames": [
+                    "i know places"
+                ]
+            },
+            {
+                "name": "Clean",
+                "allowedNames": [
+                    "clean"
+                ]
+            },
+            {
+                "name": "Wonderland",
+                "allowedNames": [
+                    "wonderland"
+                ]
+            },
+            {
+                "name": "You Are In Love",
+                "allowedNames": [
+                    "you are in love"
+                ]
+            },
+            {
+                "name": "New Romantics",
+                "allowedNames": [
+                    "new romantics"
+                ]
+            },
+            {
+                "name": "\"Slut!\"",
+                "allowedNames": [
+                    "slut"
+                ]
+            },
+            {
+                "name": "Say Don't Go",
+                "allowedNames": [
+                    "say dont go"
+                ]
+            },
+            {
+                "name": "Now That We Don't Talk",
+                "allowedNames": [
+                    "now that we dont talk"
+                ]
+            },
+            {
+                "name": "Suburban Legends",
+                "allowedNames": [
+                    "suburban legends"
+                ]
+            },
+            {
+                "name": "Is It Over Now?",
+                "allowedNames": [
+                    "is it over now"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Reputation",
+        "allowedNames": [
+            "reputation"
+        ],
+        "songs": [
+            {
+                "name": "Ready For It?",
+                "allowedNames": [
+                    "ready for it"
+                ]
+            },
+            {
+                "name": "End Game",
+                "allowedNames": [
+                    "end game"
+                ]
+            },
+            {
+                "name": "I Did Something Bad",
+                "allowedNames": [
+                    "i did something bad"
+                ]
+            },
+            {
+                "name": "Don't Blame Me",
+                "allowedNames": [
+                    "dont blame me"
+                ]
+            },
+            {
+                "name": "Delicate",
+                "allowedNames": [
+                    "delicate"
+                ]
+            },
+            {
+                "name": "Look What You Made Me Do",
+                "allowedNames": [
+                    "look what you made me do",
+                    "lwymmd"
+                ]
+            },
+            {
+                "name": "So It Goes...",
+                "allowedNames": [
+                    "so it goes"
+                ]
+            },
+            {
+                "name": "Gorgeous",
+                "allowedNames": [
+                    "gorgeous"
+                ]
+            },
+            {
+                "name": "Getaway Car",
+                "allowedNames": [
+                    "getaway car"
+                ]
+            },
+            {
+                "name": "King of My Heart",
+                "allowedNames": [
+                    "king of my heart"
+                ]
+            },
+            {
+                "name": "Dancing With Our Hands Tied",
+                "allowedNames": [
+                    "dancing with our hands tied"
+                ]
+            },
+            {
+                "name": "Dress",
+                "allowedNames": [
+                    "dress"
+                ]
+            },
+            {
+                "name": "This Is Why We Can't Have Nice Things",
+                "allowedNames": [
+                    "this is why we cant have nice things",
+                    "tiwwchnt"
+                ]
+            },
+            {
+                "name": "Call It What You Want",
+                "allowedNames": [
+                    "call it what you want"
+                ]
+            },
+            {
+                "name": "New Year's Day",
+                "allowedNames": [
+                    "new years day"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Lover",
+        "allowedNames": [
+            "lover"
+        ],
+        "songs": [
+            {
+                "name": "I Forgot That You Existed",
+                "allowedNames": [
+                    "i forgot that you existed"
+                ]
+            },
+            {
+                "name": "Cruel Summer",
+                "allowedNames": [
+                    "cruel summer"
+                ]
+            },
+            {
+                "name": "Lover",
+                "allowedNames": [
+                    "lover"
+                ]
+            },
+            {
+                "name": "The Man",
+                "allowedNames": [
+                    "the man"
+                ]
+            },
+            {
+                "name": "The Archer",
+                "allowedNames": [
+                    "the archer"
+                ]
+            },
+            {
+                "name": "I Think He Knows",
+                "allowedNames": [
+                    "i think he knows"
+                ]
+            },
+            {
+                "name": "Miss Americana & The Heartbreak Prince",
+                "allowedNames": [
+                    "miss americana and the heartbreak prince",
+                    "miss americana the heartbreak prince",
+                    "maathbp",
+                    "mathbp"
+                ]
+            },
+            {
+                "name": "Paper Rings",
+                "allowedNames": [
+                    "paper rings"
+                ]
+            },
+            {
+                "name": "Cornelia Street",
+                "allowedNames": [
+                    "cornelia street"
+                ]
+            },
+            {
+                "name": "Death By A Thousand Cuts",
+                "allowedNames": [
+                    "death by a thousand cuts"
+                ]
+            },
+            {
+                "name": "London Boy",
+                "allowedNames": [
+                    "london boy"
+                ]
+            },
+            {
+                "name": "Soon You'll Get Better",
+                "allowedNames": [
+                    "soon youll get better"
+                ]
+            },
+            {
+                "name": "False God",
+                "allowedNames": [
+                    "false god"
+                ]
+            },
+            {
+                "name": "You Need To Calm Down",
+                "allowedNames": [
+                    "you need to calm down",
+                    "yntcd"
+                ]
+            },
+            {
+                "name": "Afterglow",
+                "allowedNames": [
+                    "afterglow"
+                ]
+            },
+            {
+                "name": "ME!",
+                "allowedNames": [
+                    "me"
+                ]
+            },
+            {
+                "name": "It's Nice To Have A Friend",
+                "allowedNames": [
+                    "its nice to have a friend"
+                ]
+            },
+            {
+                "name": "Daylight",
+                "allowedNames": [
+                    "daylight"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Folklore",
+        "allowedNames": [
+            "folklore",
+            "least good album"
+        ],
+        "songs": [
+            {
+                "name": "the 1",
+                "allowedNames": [
+                    "the 1"
+                ]
+            },
+            {
+                "name": "cardigan",
+                "allowedNames": [
+                    "cardigan"
+                ]
+            },
+            {
+                "name": "the last great american dynasty",
+                "allowedNames": [
+                    "the last great american dynasty"
+                ]
+            },
+            {
+                "name": "exile",
+                "allowedNames": [
+                    "exile"
+                ]
+            },
+            {
+                "name": "my tears ricochet",
+                "allowedNames": [
+                    "my tears ricochet"
+                ]
+            },
+            {
+                "name": "mirrorball",
+                "allowedNames": [
+                    "mirrorball"
+                ]
+            },
+            {
+                "name": "seven",
+                "allowedNames": [
+                    "seven"
+                ]
+            },
+            {
+                "name": "august",
+                "allowedNames": [
+                    "august"
+                ]
+            },
+            {
+                "name": "this is me trying",
+                "allowedNames": [
+                    "this is me trying"
+                ]
+            },
+            {
+                "name": "illicit affairs",
+                "allowedNames": [
+                    "illicit affairs"
+                ]
+            },
+            {
+                "name": "invisible string",
+                "allowedNames": [
+                    "invisible string"
+                ]
+            },
+            {
+                "name": "mad woman",
+                "allowedNames": [
+                    "mad woman"
+                ]
+            },
+            {
+                "name": "epiphany",
+                "allowedNames": [
+                    "epiphany"
+                ]
+            },
+            {
+                "name": "betty",
+                "allowedNames": [
+                    "betty"
+                ]
+            },
+            {
+                "name": "peace",
+                "allowedNames": [
+                    "peace"
+                ]
+            },
+            {
+                "name": "hoax",
+                "allowedNames": [
+                    "hoax"
+                ]
+            },
+            {
+                "name": "the lakes",
+                "allowedNames": [
+                    "the lakes"
+                ]
+            },
+            {
+                "name": "the lakes - original version",
+                "allowedNames": [
+                    "the lakes original version",
+                    "the lakes original"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "evermore",
+        "allowedNames": [
+            "evermore"
+        ],
+        "songs": [
+            {
+                "name": "willow",
+                "allowedNames": [
+                    "willow"
+                ]
+            },
+            {
+                "name": "champagne problems",
+                "allowedNames": [
+                    "champagne problems"
+                ]
+            },
+            {
+                "name": "gold rush",
+                "allowedNames": [
+                    "gold rush"
+                ]
+            },
+            {
+                "name": "'tis the damn season",
+                "allowedNames": [
+                    "tis the damn season"
+                ]
+            },
+            {
+                "name": "tolerate it",
+                "allowedNames": [
+                    "tolerate it"
+                ]
+            },
+            {
+                "name": "no body, no crime",
+                "allowedNames": [
+                    "no body no crime"
+                ]
+            },
+            {
+                "name": "happiness",
+                "allowedNames": [
+                    "happiness"
+                ]
+            },
+            {
+                "name": "dorothea",
+                "allowedNames": [
+                    "dorothea"
+                ]
+            },
+            {
+                "name": "coney island",
+                "allowedNames": [
+                    "coney island"
+                ]
+            },
+            {
+                "name": "ivy",
+                "allowedNames": [
+                    "ivy"
+                ]
+            },
+            {
+                "name": "cowboy like me",
+                "allowedNames": [
+                    "cowboy like me"
+                ]
+            },
+            {
+                "name": "long story short",
+                "allowedNames": [
+                    "long story short"
+                ]
+            },
+            {
+                "name": "marjorie",
+                "allowedNames": [
+                    "marjorie"
+                ]
+            },
+            {
+                "name": "closure",
+                "allowedNames": [
+                    "closure"
+                ]
+            },
+            {
+                "name": "evermore",
+                "allowedNames": [
+                    "evermore"
+                ]
+            },
+            {
+                "name": "right where you left me",
+                "allowedNames": [
+                    "right where you left me",
+                    "rwylm"
+                ]
+            },
+            {
+                "name": "it's time to go",
+                "allowedNames": [
+                    "its time to go"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Midnights",
+        "allowedNames": [
+            "midnights"
+        ],
+        "songs": [
+            {
+                "name": "Lavender Haze",
+                "allowedNames": [
+                    "lavender haze"
+                ]
+            },
+            {
+                "name": "Maroon",
+                "allowedNames": [
+                    "maroon"
+                ]
+            },
+            {
+                "name": "Anti-Hero",
+                "allowedNames": [
+                    "anti hero",
+                    "antihero"
+                ]
+            },
+            {
+                "name": "Snow on the Beach",
+                "allowedNames": [
+                    "snow on the beach",
+                    "snow on the beach more lana",
+                    "snow on the beach more lana del rey",
+                    "snow on the beach feat more lana del rey",
+                    "snow on the beach featuring more lana del rey"
+                ]
+            },
+            {
+                "name": "You're on Your Own, Kid",
+                "allowedNames": [
+                    "youre on your own kid",
+                    "yoyok",
+                    "your on your own kid"
+                ]
+            },
+            {
+                "name": "Midnight Rain",
+                "allowedNames": [
+                    "midnight rain"
+                ]
+            },
+            {
+                "name": "Question...?",
+                "allowedNames": [
+                    "question"
+                ]
+            },
+            {
+                "name": "Vigilante Shit",
+                "allowedNames": [
+                    "vigilante shit",
+                    "vigilante"
+                ]
+            },
+            {
+                "name": "Bejeweled",
+                "allowedNames": [
+                    "bejeweled"
+                ]
+            },
+            {
+                "name": "Labyrinth",
+                "allowedNames": [
+                    "labyrinth"
+                ]
+            },
+            {
+                "name": "Karma",
+                "allowedNames": [
+                    "karma",
+                    "karma feat ice spice",
+                    "karma featuring ice spice"
+                ]
+            },
+            {
+                "name": "Sweet Nothing",
+                "allowedNames": [
+                    "sweet nothing"
+                ]
+            },
+            {
+                "name": "Mastermind",
+                "allowedNames": [
+                    "mastermind",
+                    "master mind"
+                ]
+            },
+            {
+                "name": "The Great War",
+                "allowedNames": [
+                    "the great war"
+                ]
+            },
+            {
+                "name": "Bigger Than the Whole Sky",
+                "allowedNames": [
+                    "bigger than the whole sky"
+                ]
+            },
+            {
+                "name": "Paris",
+                "allowedNames": [
+                    "paris"
+                ]
+            },
+            {
+                "name": "High Infidelity",
+                "allowedNames": [
+                    "high infidelity"
+                ]
+            },
+            {
+                "name": "Glitch",
+                "allowedNames": [
+                    "glitch"
+                ]
+            },
+            {
+                "name": "Would've, Could've, Should've",
+                "allowedNames": [
+                    "wouldve couldve shouldve"
+                ]
+            },
+            {
+                "name": "Dear Reader",
+                "allowedNames": [
+                    "dear reader"
+                ]
+            },
+            {
+                "name": "Hits Different",
+                "allowedNames": [
+                    "hits different"
+                ]
+            },
+            {
+                "name": "You're Losing Me",
+                "allowedNames": [
+                    "youre losing me"
+                ]
+            }
+        ]
+    }
+            
+]

@@ -1,0 +1,8 @@
+data is a list of albums, and each album has a list of allowed names.
+When input is received, punctuation is cleaned (removed), so things like
+apostrophes etc can be removed in the allowed names eg
+mary's song becomes marys song.
+
+Easter eggs:
+Speak Now: the best album
+Mine: the best song
