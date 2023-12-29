@@ -15,9 +15,8 @@ module.exports = {
 		const { content, author, channelId, guildId } = message;
 		// strip punctuation and make lowercase
 		const strippedContent = content.replace(/[^\w\s]|_/g, "").toLowerCase();
-		
 		const resultObject = await checkAnswer(strippedContent, author, channelId);
-		const wasValid = resultObject.valid;
+		const wasValid = resultObject.wasValid;
 		const responseMessage = resultObject.message;
 		if (wasValid) {
 			await message.react('✅');
