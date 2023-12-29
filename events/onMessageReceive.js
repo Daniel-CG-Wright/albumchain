@@ -1,5 +1,7 @@
 const { Events } = require('discord.js');
 const { checkAnswer } = require('../game/gameLogic.js');
+const { doesMessageComeFromRegisteredChannel } = require('../util.js');
+
 
 module.exports = {
 	name: Events.MessageCreate,
@@ -13,11 +15,19 @@ module.exports = {
 		 * GuildId - the id of the guild in which the message was sent
 		 */
 		const { content, author, channelId, guildId } = message;
+		// if the message was not sent in a registered channel, ignore it
+		if (!doesMessageComeFromRegisteredChannel(channelId, guildId)) return;
 		// strip punctuation and make lowercase
 		const strippedContent = content.replace(/[^\w\s]|_/g, "").toLowerCase();
 		const resultObject = await checkAnswer(strippedContent, author, channelId);
 		const wasValid = resultObject.wasValid;
 		const responseMessage = resultObject.message;
+		// this is a cheaty way but it's quick
+		if (responseMessage == "skip")
+		{
+			return;
+		}
+		
 		if (wasValid) {
 			await message.react('✅');
 		} else {

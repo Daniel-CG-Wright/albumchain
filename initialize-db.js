@@ -8,6 +8,7 @@ const db = new sqlite3.Database('db/gameStorage.db');
 db.run(`
     CREATE TABLE IF NOT EXISTS CHANNEL (
         channelId TEXT PRIMARY KEY,
+        guildId TEXT NOT NULL,
         score INTEGER NOT NULL,
         highScore INTEGER NOT NULL,
         currentStage INTEGER NOT NULL,

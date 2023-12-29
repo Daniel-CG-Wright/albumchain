@@ -286,7 +286,8 @@
         "name": "Speak Now",
         "allowedNames": [
             "speak now",
-            "the best album"
+            "the best album",
+            "speak now ow"
         ],
         "songs": [
             {
@@ -299,7 +300,8 @@
             {
                 "name": "Mine - POP Mix",
                 "allowedNames": [
-                    "mine pop mix"
+                    "mine pop mix",
+                    "mine  pop mix"
                 ]
             },
             {
@@ -378,6 +380,8 @@
                 "name": "Haunted - Acoustic Version",
                 "allowedNames": [
                     "haunted acoustic version",
+                    "haunted  acoustic version",
+                    "haunted  acoustic",
                     "haunted acoustic"
                 ]
             },
@@ -577,7 +581,9 @@
                 "name": "State Of Grace (Acoustic Version)",
                 "allowedNames": [
                     "state of grace acoustic version",
-                    "state of grace acoustic"
+                    "state of grace acoustic",
+                    "state of grace  acoustic version",
+                    "state of grace  acoustic"
                 ]
             },
             {

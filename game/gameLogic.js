@@ -6,25 +6,10 @@
 
 const Database = require('better-sqlite3');
 const data = require('./data.json');
+const { registerChannel, clearSongs } = require('../util.js');
 
 // normally keep on, but for testing purposes can be turned off
-const disallowSamePlayerTwiceInARow = false;
-
-/**
- * This function registers the given channel in the database
- * @param {string} channelId - the id of the channel to register
- */
-function registerChannel(db, channelId) {
-    // Check if the channel is already registered
-    let row = db.prepare(`SELECT channelId FROM CHANNEL WHERE channelId = ?`).get(channelId);
-
-    if (!row) {
-        db.prepare(`INSERT INTO CHANNEL (channelId, score, highScore, currentStage, currentSubsection, subsectionEntriesSoFar, lastPlayerId) VALUES (?, ?, ?, ?, ?, ?, ?)`)
-          .run(channelId, 0, 0, 1, 0, 0, null);
-    }
-
-
-}
+const disallowSamePlayerTwiceInARow = true;
 
 /**
  * This function checks if the given answer is valid for the given channel. It also
@@ -46,7 +31,6 @@ async function checkAnswer(answer, user, channelId) {
     const db = new Database('db/gameStorage.db');
     
     try {
-        registerChannel(db, channelId);
         
         const row = db.prepare(`SELECT currentStage, currentSubsection, subsectionEntriesSoFar, lastPlayerId FROM CHANNEL WHERE channelId = ?`).get(channelId);
         let resultObject;
@@ -106,6 +90,11 @@ async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsec
             } else {
                 resultObject.wasValid = false;
                 resultObject.message = `Pay attention! Pay attention! You should've said ${currentStage}!`;
+                // if the curretn stage is 1 then dont do anthing
+                if (currentStage == 1)
+                {
+                    resultObject.message = "skip";
+                }
             }
             break;
         case 1:
@@ -214,15 +203,6 @@ async function resetGame(channelId, db) {
 
     db.prepare(`UPDATE CHANNEL SET score = 0, currentStage = 1, currentSubsection = 0, subsectionEntriesSoFar = 0, lastPlayerId = NULL WHERE channelId = ?`).run(channelId);
     clearSongs(channelId, db);
-}
-
-/**
- * This clears the songs for the given channel
- * @param {string} channelId - the id of the channel to clear the songs for
- * @param {object} db - the database object
- */
-async function clearSongs(channelId, db) {
-    db.prepare(`DELETE FROM SONG WHERE channelId = ?`).run(channelId);
 }
 
 /**
