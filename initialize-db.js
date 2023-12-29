@@ -26,6 +26,16 @@ db.run(`
         FOREIGN KEY (channelId) REFERENCES CHANNEL(channelId)
     );
 `);
+
+// create a users table to record how many times a user has
+// entered info or failed
+db.run(`
+    CREATE TABLE IF NOT EXISTS USER (
+        userId TEXT PRIMARY KEY,
+        correctAnswers INTEGER NOT NULL,
+        timesFailed INTEGER NOT NULL
+    );
+`);
             
 
 // Close the database connection

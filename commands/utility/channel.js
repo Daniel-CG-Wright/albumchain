@@ -4,7 +4,7 @@ const { registerChannelForGuild } = require('../../util.js');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('setchannel')
-        .setDescription('Set the channel for the bot to listen in (clears previous data)')
+        .setDescription('Set the channel for the bot to listen in (clears previous data except highscore)')
         .addChannelOption(option =>
             option.setName('channel')
                 .setDescription('The channel to configure the bot to listen in')
@@ -15,6 +15,6 @@ module.exports = {
         // Save the channel ID or any other necessary configuration
         // logic here to configure the bot to listen in the specified channel
         registerChannelForGuild(interaction.guildId, channel.id);
-        await interaction.reply(`Bot will now listen in ${channel}. All previous data has been cleared.`);
+        await interaction.reply(`Bot will now listen in ${channel}. All previous data has been cleared (other than highscore).`);
     },
 };

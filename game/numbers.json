@@ -1,0 +1,102 @@
+[
+    {
+        "number": "1",
+        "allowedNames": [
+            "1",
+            "one",
+            "uno",
+            "un",
+            "eins"
+        ]
+    },
+    {
+        "number": "2",
+        "allowedNames": [
+            "2",
+            "two",
+            "dos",
+            "deux",
+            "zwei"
+        ]
+    },
+    {
+        "number": "3",
+        "allowedNames": [
+            "3",
+            "three",
+            "tres",
+            "trois",
+            "drei"
+        ]
+    },
+    {
+        "number": "4",
+        "allowedNames": [
+            "4",
+            "four",
+            "cuatro",
+            "quatre",
+            "vier"
+        ]
+    },
+    {
+        "number": "5",
+        "allowedNames": [
+            "5",
+            "five",
+            "cinco",
+            "cinq",
+            "fünf"
+        ]
+    },
+    {
+        "number": "6",
+        "allowedNames": [
+            "6",
+            "six",
+            "seis",
+            "six",
+            "sechs"
+        ]
+    },
+    {
+        "number": "7",
+        "allowedNames": [
+            "7",
+            "seven",
+            "siete",
+            "sept",
+            "sieben"
+        ]
+    },
+    {
+        "number": "8",
+        "allowedNames": [
+            "8",
+            "eight",
+            "ocho",
+            "huit",
+            "acht"
+        ]
+    },
+    {
+        "number": "9",
+        "allowedNames": [
+            "9",
+            "nine",
+            "nueve",
+            "neuf",
+            "neun"
+        ]
+    },
+    {
+        "number": "10",
+        "allowedNames": [
+            "10",
+            "ten",
+            "diez",
+            "dix",
+            "zehn"
+        ]
+    }
+]

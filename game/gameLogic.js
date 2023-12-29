@@ -6,10 +6,13 @@
 
 const Database = require('better-sqlite3');
 const data = require('./data.json');
-const { registerChannel, clearSongs } = require('../util.js');
+const numbers = require('./numbers.json');
+const { clearSongs, areStringsSimilarEnough } = require('../util.js');
 
 // normally keep on, but for testing purposes can be turned off
-const disallowSamePlayerTwiceInARow = true;
+const disallowSamePlayerTwiceInARow = false;
+// use the string similarity library to allow minor mistakes
+const similarityThreshold = 0.95; // 0.8 is natural, 1 is exact
 
 /**
  * This function checks if the given answer is valid for the given channel. It also
@@ -83,13 +86,15 @@ async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsec
     switch (currentSubsection)
     {
         case 0:
-            // check against the current stage
-            if (answer === currentStage.toString()) {
+            // check against the allowed names for the current stage number
+            const numberData = numbers[currentStage - 1];
+            // dont use string similarity for numbers
+            if (numberData.allowedNames.includes(answer)) {
                 resultObject.message = ``;
                 resultObject.wasValid = true;
             } else {
                 resultObject.wasValid = false;
-                resultObject.message = `Pay attention! Pay attention! You should've said ${currentStage}!`;
+                resultObject.message = `Pay attention! Pay attention! You should've said ${numberData.number}!`;
                 // if the curretn stage is 1 then dont do anthing
                 if (currentStage == 1)
                 {
@@ -98,8 +103,8 @@ async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsec
             }
             break;
         case 1:
-            // check against the allowed album names
-            if (allowedAlbumNames.includes(answer)) {
+            // check against the allowed album names, using string similarity
+            if (allowedAlbumNames.some(allowedAlbumName => areStringsSimilarEnough(answer, allowedAlbumName, similarityThreshold))) {
                 resultObject.wasValid = true;
                 resultObject.message = ``;
             } else {
@@ -173,7 +178,9 @@ async function validateSongName(songName, stage) {
     // if it is, return the song.name property or blank if it is not
     let returnedSongName = "";
     songs.forEach(song => {
-        if (song.allowedNames.includes(songName)) {
+        const allowedNames = song.allowedNames;
+        // use string similarity to check if the song name is similar enough to the allowed name
+        if (allowedNames.some(allowedName => areStringsSimilarEnough(songName, allowedName, similarityThreshold))) {
             returnedSongName = song.name;
         }
     });
@@ -189,8 +196,6 @@ async function validateSongName(songName, stage) {
  */
 async function checkDuplicateSong(songName, channelId, db) {
     const row = db.prepare(`SELECT songName FROM SONG WHERE songName = ? AND channelId = ?`).get(songName, channelId);
-    // log all the songs in the database
-    const allSongs = db.prepare(`SELECT * FROM SONG`).all();
     return row !== undefined;
 }
 

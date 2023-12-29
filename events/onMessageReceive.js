@@ -1,6 +1,10 @@
 const { Events } = require('discord.js');
 const { checkAnswer } = require('../game/gameLogic.js');
-const { doesMessageComeFromRegisteredChannel } = require('../util.js');
+const { 
+	doesMessageComeFromRegisteredChannel,
+	addUserCorrectAnswer,
+	addUserIncorrectAnswer,
+} = require('../util.js');
 
 
 module.exports = {
@@ -29,8 +33,10 @@ module.exports = {
 		}
 		
 		if (wasValid) {
+			await addUserCorrectAnswer(author.id);
 			await message.react('✅');
 		} else {
+			await addUserIncorrectAnswer(author.id);
 			await message.react('❌');
 		}
 
