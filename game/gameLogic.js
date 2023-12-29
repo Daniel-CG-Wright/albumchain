@@ -50,6 +50,7 @@ async function checkAnswer(answer, user, channelId) {
         
         const row = db.prepare(`SELECT currentStage, currentSubsection, subsectionEntriesSoFar, lastPlayerId FROM CHANNEL WHERE channelId = ?`).get(channelId);
         let resultObject;
+        let enteredSongName = answer;
         if (row.lastPlayerId == user.id && disallowSamePlayerTwiceInARow) {
             resultObject = {
                 wasValid: false,
@@ -57,10 +58,12 @@ async function checkAnswer(answer, user, channelId) {
             };
         }
         else {
-            resultObject = await checkAnswerStageAndSubsection(answer, row.currentStage, row.currentSubsection, row.subsectionEntriesSoFar, channelId, db);
+            const checkObject = await checkAnswerStageAndSubsection(answer, row.currentStage, row.currentSubsection, row.subsectionEntriesSoFar, channelId, db);
+            resultObject = checkObject.resultObject;
+            enteredSongName = checkObject.enteredSongName;
         }
         if (resultObject.wasValid) {
-            await updateGame(channelId, row.currentStage, row.currentSubsection, row.subsectionEntriesSoFar, answer, user.id, db);
+            await updateGame(channelId, row.currentStage, row.currentSubsection, row.subsectionEntriesSoFar, enteredSongName, user.id, db);
         } else {
             await resetGame(channelId, db);
         }
@@ -80,15 +83,18 @@ async function checkAnswer(answer, user, channelId) {
  * @param {string} channelId - the id of the channel in which the answer was given
  * @param {object} db - the database object
  * @returns {object} - an object with the following properties:
- * - wasValid - whether the answer was valid
+ * - resultObject - an object with the following properties:
+ *  - wasValid - whether the answer was valid
  * - message - the message to send to the user
+ * 
+ * - enteredSongName - the song name entered by the user
  */
 async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsection, subsectionEntriesSoFar, channelId, db) {
     const resultObject = {
         wasValid: false,
         message: ""
     };
-    
+    let enteredSongName = answer;
     const { currentAlbumName, allowedAlbumNames } = await getAlbumName(currentStage);
     switch (currentSubsection)
     {
@@ -104,8 +110,6 @@ async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsec
             break;
         case 1:
             // check against the allowed album names
-            console.log(allowedAlbumNames);
-            console.log(answer);
             if (allowedAlbumNames.includes(answer)) {
                 resultObject.wasValid = true;
                 resultObject.message = ``;
@@ -120,13 +124,11 @@ async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsec
             // the returnend song name is the song name given by the user if a valid one was given, or blank if no song could be found
             // this must then be checked to make sure it isnt a duplicate
             if (returnedSongName === "") {
-                console.log("invalid song");
                 resultObject.wasValid = false;
                 resultObject.message = `Pay attention! Pay attention! You should've given a song from ${currentAlbumName}!`;
             } else {
                 // if the song name is the same as the album name, and currentSubsectionentriesSoFar = 0, then invalid
                 if (returnedSongName === currentAlbumName && subsectionEntriesSoFar === 0) {
-                    console.log("invalid song");
                     resultObject.wasValid = false;
                     resultObject.message = `NO! The title track is not allowed right after the album names!`;
                 }
@@ -134,13 +136,12 @@ async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsec
                     // ensure the song name is not a duplicate
                     const isDuplicate = await checkDuplicateSong(returnedSongName, channelId, db)
                     if (isDuplicate) {
-                        console.log("duplicate song");
                         resultObject.wasValid = false;
                         resultObject.message = `No duplicate songs! ${returnedSongName} has already been said!`;
                     } else {
-                        console.log("valid song");
                         resultObject.wasValid = true;
                         resultObject.message = ``;
+                        enteredSongName = returnedSongName;
                     }
                 }
             }
@@ -148,7 +149,11 @@ async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsec
 
     }
 
-    return resultObject;
+    return {
+        resultObject,
+        enteredSongName
+    };
+    
 }
 
 /**
@@ -159,7 +164,6 @@ async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsec
  * - allowedAlbumNames - the allowed album names for the given stage
  */
 async function getAlbumName(stage) {
-    console.log(stage);
     const currentAlbumName = data[stage - 1].name;
     const allowedAlbumNames = data[stage - 1].allowedNames;
     return {
@@ -196,14 +200,8 @@ async function validateSongName(songName, stage) {
  */
 async function checkDuplicateSong(songName, channelId, db) {
     const row = db.prepare(`SELECT songName FROM SONG WHERE songName = ? AND channelId = ?`).get(songName, channelId);
-    console.log("in checkDuplicateSong");
     // log all the songs in the database
-    console.log("channelid");
-    console.log(channelId);
     const allSongs = db.prepare(`SELECT * FROM SONG`).all();
-    console.log(allSongs);
-    console.log(row);
-    console.log(songName);
     return row !== undefined;
 }
 
@@ -282,8 +280,6 @@ async function updateGame(
  * @param {object} db - the database object
  */
 async function addSong(channelId, songName, db) {
-    console.log("ading song");
-    console.log(channelId);
     db.prepare(`INSERT INTO SONG (songName, channelId) VALUES (?, ?)`).run(songName, channelId);
 }
 
