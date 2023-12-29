@@ -140,7 +140,6 @@ async function getUserStats(userId) {
     if (!percentageCorrect || isNaN(percentageCorrect)) {
         percentageCorrect = 100;
     }
-    console.log(percentageCorrect);
     // round to string of 1 decimal place
     percentageCorrect = Math.round(percentageCorrect * 10) / 10;
     db.close();
