@@ -10,7 +10,7 @@ const numbers = require('./numbers.json');
 const { clearSongs, areStringsSimilarEnough } = require('../util.js');
 
 // normally keep on, but for testing purposes can be turned off
-const disallowSamePlayerTwiceInARow = false;
+const disallowSamePlayerTwiceInARow = true;
 // use the string similarity library to allow minor mistakes
 const similarityThreshold = 0.90; // 0.8 is natural, 1 is exact
 
