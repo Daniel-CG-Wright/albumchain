@@ -20,19 +20,23 @@ async function registerChannelForGuild(guildId, newChannelId) {
     const db = new Database('db/gameStorage.db');
 
     // Check if the channel is already registered
-    let row = db.prepare(`SELECT channelId, highScore FROM CHANNEL WHERE guildId = ?`).get(guildId);
+    let row = db.prepare(`SELECT channelId, highScore, highestAlbum, roundsCompleted FROM CHANNEL WHERE guildId = ?`).get(guildId);
     let highScore = 0;
+    let highestAlbum = null;
+    let roundsCompleted = 0;
     if (row) {
-        // save the high score for the channel
+        // save the high score, highest album, and rounds completed for the channel
         highScore = row.highScore;
+        highestAlbum = row.highestAlbum;
+        roundsCompleted = row.roundsCompleted;
         const oldChannelId = row.channelId;
         // Clear any songs for the channel
         await clearSongs(oldChannelId, db);
         // Clear any previous channel registered for the server
         db.prepare(`DELETE FROM CHANNEL WHERE guildId = ?`).run(guildId);
     }
-    db.prepare(`INSERT INTO CHANNEL (channelId, guildId, score, highScore, currentStage, currentSubsection, subsectionEntriesSoFar, lastPlayerId) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`)
-          .run(newChannelId, guildId, 0, highScore, 1, 0, 0, null);
+    db.prepare(`INSERT INTO CHANNEL (channelId, guildId, score, highScore, currentStage, currentSubsection, subsectionEntriesSoFar, lastPlayerId, highestAlbum, roundsCompleted) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
+          .run(newChannelId, guildId, 0, highScore, 1, 0, 0, null, highestAlbum, roundsCompleted);
 
     db.close();
 
@@ -63,15 +67,15 @@ function areStringsSimilarEnough(string, stringToCheckAgainst, similarityThresho
 }
 
 /**
- * This function gets the server stats (high score, listening channel, last player to message)
+ * This function gets the server stats (high score, listening channel, highest album, highest rounds completed)
  * @param {string} guildId - the id of the guild to get the stats for
  * @returns {object} - the stats object
- * (channelId, highScore, lastPlayerId)
+ * (channelId, highScore, lastPlayerId, highestAlbum, roundsCompleted)
  */
 async function getServerStats(guildId) {
     const db = new Database('db/gameStorage.db');
 
-    let row = db.prepare(`SELECT channelId, highScore FROM CHANNEL WHERE guildId = ?`).get(guildId);
+    let row = db.prepare(`SELECT channelId, highScore, highestAlbum, roundsCompleted FROM CHANNEL WHERE guildId = ?`).get(guildId);
 
     db.close();
 
@@ -79,7 +83,9 @@ async function getServerStats(guildId) {
     if (!row) {
         return {
             channelId: null,
-            highScore: null
+            highScore: null,
+            highestAlbum: null,
+            roundsCompleted: null
         };
     }
 

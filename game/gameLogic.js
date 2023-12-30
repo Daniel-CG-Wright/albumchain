@@ -51,10 +51,17 @@ async function checkAnswer(answer, user, channelId) {
             resultObject = checkObject.resultObject;
             enteredSongName = checkObject.enteredSongName;
         }
+        let doReverse = false;
         if (resultObject.wasValid) {
-            await updateGame(channelId, row.currentStage, row.currentSubsection, row.subsectionEntriesSoFar, enteredSongName, user.id, db);
+            doReverse = await updateGame(channelId, row.currentStage, row.currentSubsection, row.subsectionEntriesSoFar, enteredSongName, user.id, db);
         } else {
             await resetGame(channelId, db);
+        }
+
+        if (doReverse) {
+            resultObject.message = `🎉 CONGRATULATIONS 🎉!!! You reached the end of the round! Now we reverse the direction, keep going!\n${resultObject.message}`;
+            data.reverse();
+            numbers.reverse();
         }
 
         return resultObject;
@@ -88,18 +95,17 @@ async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsec
         message: ""
     };
     let enteredSongName = answer;
-    const logicalStage = currentStage % numberOfAlbums;
-    if (logicalStage === 0) {
-        currentStage = numberOfAlbums;
-    }
-    const isReversed = currentStage % ((numberOfAlbums * 2) + 1) > numberOfAlbums;
+    let logicalStage = currentStage % numberOfAlbums;
+    // if the logical stage is 0 then set it to 10
+    logicalStage = logicalStage === 0 ? numberOfAlbums : logicalStage;
+    // when combined with reversed albums, this should work
 
-    const { currentAlbumName, allowedAlbumNames } = await getAlbumName(currentStage);
+    const { currentAlbumName, allowedAlbumNames } = await getAlbumName(logicalStage);
     switch (currentSubsection)
     {
         case 0:
             // check against the allowed names for the current stage number
-            const numberData = numbers[currentStage - 1];
+            const numberData = numbers[logicalStage - 1];
             // dont use string similarity for numbers
             if (numberData.allowedNames.includes(answer)) {
                 resultObject.message = ``;
@@ -126,7 +132,7 @@ async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsec
             break;
 
         default:
-            const returnedSongName = await validateSongName(answer, currentStage);
+            const returnedSongName = await validateSongName(answer, logicalStage);
             // the returnend song name is the song name given by the user if a valid one was given, or blank if no song could be found
             // this must then be checked to make sure it isnt a duplicate
             if (returnedSongName === "") {
@@ -231,6 +237,7 @@ async function resetGame(channelId, db) {
  * @param enteredSongName - the song name entered by the user
  * @param lastPlayerId - the id of the last player to enter a song
  * @param {object} db - the database object
+ * @returns {boolean} - whether the game should be reversed
  */
 async function updateGame(
     channelId,
@@ -246,7 +253,10 @@ async function updateGame(
     let newSubsectionEntriesSoFar;
     let newCurrentSubsection = currentSubsection;
     let newCurrentStage = currentStage;
-    if (subsectionEntriesSoFar + 1 === currentStage) {
+    let logicalStage = currentStage % numberOfAlbums;
+    // if the logical stage is 0 then set it to 10
+    logicalStage = logicalStage === 0 ? numberOfAlbums : logicalStage;
+    if (subsectionEntriesSoFar + 1 === logicalStage) {
         // reset the subsection entries so far and increment the subsection
         newSubsectionEntriesSoFar = 0;
         if (currentSubsection + 1 === 3) {
@@ -265,8 +275,20 @@ async function updateGame(
         }
     }
     // update the game, incrementing the score and updating highScore if necessary
+    // get whether highscore is lower than score + 1
+    const highScoreLowerThanScorePlusOne = db.prepare(`SELECT highScore < score + 1 AS highScoreLowerThanScorePlusOne FROM CHANNEL WHERE channelId = ?`).get(channelId).highScoreLowerThanScorePlusOne;
     const updateStmt = db.prepare(`UPDATE CHANNEL SET score = score + 1, highScore = CASE WHEN score + 1 > highScore THEN score + 1 ELSE highScore END, currentStage = ?, currentSubsection = ?, subsectionEntriesSoFar = ?, lastPlayerId = ? WHERE channelId = ?`);
     updateStmt.run(newCurrentStage, newCurrentSubsection, newSubsectionEntriesSoFar, lastPlayerId, channelId);
+
+    
+    if (highScoreLowerThanScorePlusOne) {
+        // update highest album and number of reverses (which is an integer)
+        const numberOfReverses = (currentStage - 1) / numberOfAlbums;
+        const highestAlbum = data[logicalStage - 1].name;
+        db.prepare(`UPDATE CHANNEL SET highestAlbum = ?, roundsCompleted = ? WHERE channelId = ?`).run(highestAlbum, numberOfReverses, channelId);
+    }
+    // if the current stage is 11, 21, etc, then reverse the game - this is done by checking if the original stage was 10, 20, etc
+    return (newCurrentStage % numberOfAlbums) === 1 && currentStage % numberOfAlbums === 0;
 }
 
 /**
