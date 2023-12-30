@@ -59,7 +59,7 @@ async function checkAnswer(answer, user, channelId) {
         }
 
         if (doReverse) {
-            resultObject.message = `You reached the end of the round! Now we reverse the direction!\n${resultObject.message}`;
+            resultObject.message = `🎉 CONGRATULATIONS 🎉!!! You reached the end of the round! Now we reverse the direction, keep going!\n${resultObject.message}`;
             data.reverse();
             numbers.reverse();
         }
