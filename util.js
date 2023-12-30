@@ -32,7 +32,7 @@ async function registerChannelForGuild(guildId, newChannelId) {
         db.prepare(`DELETE FROM CHANNEL WHERE guildId = ?`).run(guildId);
     }
     db.prepare(`INSERT INTO CHANNEL (channelId, guildId, score, highScore, currentStage, currentSubsection, subsectionEntriesSoFar, lastPlayerId) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`)
-          .run(newChannelId, guildId, 0, highScore, 10, 2, 9, null);
+          .run(newChannelId, guildId, 0, highScore, 1, 0, 0, null);
 
     db.close();
 
