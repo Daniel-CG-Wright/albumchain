@@ -6,6 +6,7 @@ module.exports = {
         .setDescription('Get help with the bot'),
     async execute(interaction) {
         await interaction.reply(`
+        Setup: use /setchannel <channel> to set the channel to play in. Make sure the bot has permissions to send messages in the channel.
             Play album chain as you would in circle. Rules are:
             1. No mothering - don't explain the rules of album chain.
             2. No talking in album chain - any messages sent are considered answers.

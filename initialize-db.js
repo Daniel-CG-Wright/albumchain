@@ -36,7 +36,6 @@ db.run(`
         timesFailed INTEGER NOT NULL
     );
 `);
-            
 
 // Close the database connection
 db.close();

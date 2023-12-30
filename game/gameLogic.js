@@ -14,6 +14,8 @@ const disallowSamePlayerTwiceInARow = true;
 // use the string similarity library to allow minor mistakes
 const similarityThreshold = 0.90; // 0.8 is natural, 1 is exact
 
+const numberOfAlbums = data.length;
+
 /**
  * This function checks if the given answer is valid for the given channel. It also
  * updates the database with the new information if the answer is valid.
@@ -62,7 +64,8 @@ async function checkAnswer(answer, user, channelId) {
 }
 
 /**
- * This function checks the given answer against the current stage and subsection
+ * This function checks the given answer against the current stage and subsection.
+ * When the stage reaches 11, 21 etc we reverse the direction (so 10 midnights (midnight song), 9 9 evermore evermore (evermore song) (evermore song), etc)
  * @param {string} answer - the answer to check (stripped of punctuation and lowercase)
  * @param {number} currentStage - the current stage
  * @param {string} currentSubsection - the current subsection
@@ -75,6 +78,9 @@ async function checkAnswer(answer, user, channelId) {
  * - message - the message to send to the user
  * 
  * - enteredSongName - the song name entered by the user
+ * 
+ * when stage is 11, we want logical stage of 1
+ * when stage is 21 we want logical stage of 1 but not reversed
  */
 async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsection, subsectionEntriesSoFar, channelId, db) {
     const resultObject = {
@@ -82,6 +88,12 @@ async function checkAnswerStageAndSubsection(answer, currentStage, currentSubsec
         message: ""
     };
     let enteredSongName = answer;
+    const logicalStage = currentStage % numberOfAlbums;
+    if (logicalStage === 0) {
+        currentStage = numberOfAlbums;
+    }
+    const isReversed = currentStage % ((numberOfAlbums * 2) + 1) > numberOfAlbums;
+
     const { currentAlbumName, allowedAlbumNames } = await getAlbumName(currentStage);
     switch (currentSubsection)
     {
@@ -255,7 +267,6 @@ async function updateGame(
     // update the game, incrementing the score and updating highScore if necessary
     const updateStmt = db.prepare(`UPDATE CHANNEL SET score = score + 1, highScore = CASE WHEN score + 1 > highScore THEN score + 1 ELSE highScore END, currentStage = ?, currentSubsection = ?, subsectionEntriesSoFar = ?, lastPlayerId = ? WHERE channelId = ?`);
     updateStmt.run(newCurrentStage, newCurrentSubsection, newSubsectionEntriesSoFar, lastPlayerId, channelId);
-
 }
 
 /**

@@ -286,15 +286,13 @@
         "name": "Speak Now",
         "allowedNames": [
             "speak now",
-            "the best album",
             "speak now ow"
         ],
         "songs": [
             {
                 "name": "Mine",
                 "allowedNames": [
-                    "mine",
-                    "the best song"
+                    "mine"
                 ]
             },
             {
@@ -584,6 +582,12 @@
                     "state of grace acoustic",
                     "state of grace  acoustic version",
                     "state of grace  acoustic"
+                ]
+            },
+            {
+                "name": "Ronan",
+                "allowedNames": [
+                    "ronan"
                 ]
             },
             {
@@ -1021,10 +1025,9 @@
         ]
     },
     {
-        "name": "Folklore",
+        "name": "folklore",
         "allowedNames": [
-            "folklore",
-            "least good album"
+            "folklore"
         ],
         "songs": [
             {

@@ -13,7 +13,7 @@ module.exports = {
 			return;
 		}
 		const channel = interaction.guild.channels.cache.get(channelId);
-		await interaction.reply(`High score: ${highScore}\nListening channel: ${channel}`);
+		await interaction.reply(`High score: ${highScore}\nListening channel: ${channel}\nHighest album: ${highestAlbum}`);
 
 	},
 };
