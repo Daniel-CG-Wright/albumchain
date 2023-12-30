@@ -32,7 +32,7 @@ async function registerChannelForGuild(guildId, newChannelId) {
         db.prepare(`DELETE FROM CHANNEL WHERE guildId = ?`).run(guildId);
     }
     db.prepare(`INSERT INTO CHANNEL (channelId, guildId, score, highScore, currentStage, currentSubsection, subsectionEntriesSoFar, lastPlayerId) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`)
-          .run(newChannelId, guildId, 0, highScore, 1, 0, 0, null);
+          .run(newChannelId, guildId, 0, highScore, 10, 2, 9, null);
 
     db.close();
 
@@ -63,15 +63,15 @@ function areStringsSimilarEnough(string, stringToCheckAgainst, similarityThresho
 }
 
 /**
- * This function gets the server stats (high score, listening channel, last player to message)
+ * This function gets the server stats (high score, listening channel, highest album, highest rounds completed)
  * @param {string} guildId - the id of the guild to get the stats for
  * @returns {object} - the stats object
- * (channelId, highScore, lastPlayerId)
+ * (channelId, highScore, lastPlayerId, highestAlbum, roundsCompleted)
  */
 async function getServerStats(guildId) {
     const db = new Database('db/gameStorage.db');
 
-    let row = db.prepare(`SELECT channelId, highScore FROM CHANNEL WHERE guildId = ?`).get(guildId);
+    let row = db.prepare(`SELECT channelId, highScore, highestAlbum, roundsCompleted FROM CHANNEL WHERE guildId = ?`).get(guildId);
 
     db.close();
 
@@ -79,7 +79,9 @@ async function getServerStats(guildId) {
     if (!row) {
         return {
             channelId: null,
-            highScore: null
+            highScore: null,
+            highestAlbum: null,
+            roundsCompleted: null
         };
     }
 

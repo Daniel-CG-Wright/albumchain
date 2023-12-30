@@ -14,7 +14,9 @@ db.run(`
         currentStage INTEGER NOT NULL,
         currentSubsection INTEGER NOT NULL,
         subsectionEntriesSoFar INTEGER NOT NULL,
-        lastPlayerId INTEGER
+        lastPlayerId INTEGER,
+        highestAlbum TEXT,
+        roundsCompleted INTEGER
     );
 `);
 
