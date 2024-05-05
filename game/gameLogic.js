@@ -14,6 +14,8 @@ const disallowSamePlayerTwiceInARow = true;
 // use the string similarity library to allow minor mistakes
 const similarityThreshold = 0.65; // 0.8 is natural, 1 is exact
 
+const didReversal = false;
+
 const numberOfAlbums = data.length;
 
 /**
@@ -60,6 +62,7 @@ async function checkAnswer(answer, user, channelId) {
 
         if (doReverse) {
             resultObject.message = `🎉 CONGRATULATIONS 🎉!!! You reached the end of the round! Now we reverse the direction, keep going! (11, TTPD, fortnight etc)\n${resultObject.message}`;
+            didReversal = true;
             data.reverse();
             numbers.reverse();
         }
@@ -223,7 +226,11 @@ async function checkDuplicateSong(songName, channelId, db) {
  * @param {object} db - the database object
  */
 async function resetGame(channelId, db) {
-
+    if (didReversal) {
+        data.reverse();
+        numbers.reverse();
+        didReversal = false;
+    }
     db.prepare(`UPDATE CHANNEL SET score = 0, currentStage = 1, currentSubsection = 0, subsectionEntriesSoFar = 0, lastPlayerId = NULL WHERE channelId = ?`).run(channelId);
     clearSongs(channelId, db);
 }
