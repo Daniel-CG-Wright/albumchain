@@ -98,5 +98,15 @@
             "dix",
             "zehn"
         ]
+    },
+    {
+        "number": "11",
+        "allowedNames": [
+            "11",
+            "eleven",
+            "once",
+            "onze",
+            "elf"
+        ]
     }
 ]
