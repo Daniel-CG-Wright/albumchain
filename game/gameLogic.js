@@ -291,7 +291,12 @@ async function updateGame(
     if (highScoreLowerThanScorePlusOne) {
         // update highest album and number of reverses (which is an integer)
         const numberOfReverses = (currentStage - 1) / numberOfAlbums;
-        const highestAlbum = data[logicalStage - 1].name;
+        let highestAlbum = "";
+        for (let i = 0; i < numberOfReverses; i++) {
+            if (i % 2 === 0) { highestAlbum += data[numberOfAlbums - 1].name; }
+            else { highestAlbum += data[0].name; }
+        }
+        highestAlbum += data[logicalStage - 1].name;
         db.prepare(`UPDATE CHANNEL SET highestAlbum = ?, roundsCompleted = ? WHERE channelId = ?`).run(highestAlbum, numberOfReverses, channelId);
     }
     // if the current stage is 11, 21, etc, then reverse the game - this is done by checking if the original stage was 10, 20, etc
