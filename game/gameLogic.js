@@ -12,7 +12,7 @@ const { clearSongs, areStringsSimilarEnough } = require('../util.js');
 // normally keep on, but for testing purposes can be turned off
 const disallowSamePlayerTwiceInARow = true;
 // use the string similarity library to allow minor mistakes
-const similarityThreshold = 0.90; // 0.8 is natural, 1 is exact
+const similarityThreshold = 0.80; // 0.8 is natural, 1 is exact
 
 const numberOfAlbums = data.length;
 
@@ -59,7 +59,7 @@ async function checkAnswer(answer, user, channelId) {
         }
 
         if (doReverse) {
-            resultObject.message = `🎉 CONGRATULATIONS 🎉!!! You reached the end of the round! Now we reverse the direction, keep going!\n${resultObject.message}`;
+            resultObject.message = `🎉 CONGRATULATIONS 🎉!!! You reached the end of the round! Now we reverse the direction, keep going! (11, TTPD, fortnight etc)\n${resultObject.message}`;
             data.reverse();
             numbers.reverse();
         }

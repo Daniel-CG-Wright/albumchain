@@ -27,13 +27,15 @@
                     "teardrops on my guitar radio single remix",
                     "teardrops on my guitar pop version",
                     "teardrops on my guitar radio version",
-                    "teardrops on my guitar radio single"
+                    "teardrops on my guitar radio single",
+                    "tomg"
                 ]
             },
             {
                 "name": "A Place in This World",
                 "allowedNames": [
-                    "a place in this world"
+                    "a place in this world",
+                    "apitw"
                 ]
             },
             {
@@ -52,7 +54,8 @@
             {
                 "name": "Tied Together with a Smile",
                 "allowedNames": [
-                    "tied together with a smile"
+                    "tied together with a smile",
+                    "ttwas"
                 ]
             },
             {
@@ -71,6 +74,7 @@
                 "name": "Mary's Song (Oh My My My)",
                 "allowedNames": [
                     "marys song oh my my my",
+                    "marys song oh my my",
                     "marys song"
                 ]
             },
@@ -83,7 +87,8 @@
             {
                 "name": "I'm Only Me When I'm with You",
                 "allowedNames": [
-                    "im only me when im with you"
+                    "im only me when im with you",
+                    "iomwiwy"
                 ]
             },
             {
@@ -95,7 +100,8 @@
             {
                 "name": "A Perfectly Good Heart",
                 "allowedNames": [
-                    "a perfectly good heart"
+                    "a perfectly good heart",
+                    "apgh"
                 ]
             }
         ]
@@ -152,13 +158,15 @@
             {
                 "name": "Tell Me Why",
                 "allowedNames": [
-                    "tell me why"
+                    "tell me why",
+                    "tmw"
                 ]
             },
             {
                 "name": "You're Not Sorry",
                 "allowedNames": [
-                    "youre not sorry"
+                    "youre not sorry",
+                    "yns"
                 ]
             },
             {
@@ -211,7 +219,8 @@
             {
                 "name": "Come in with the Rain",
                 "allowedNames": [
-                    "come in with the rain"
+                    "come in with the rain",
+                    "ciwtr"
                 ]
             },
             {
@@ -230,13 +239,15 @@
             {
                 "name": "Today Was a Fairytale",
                 "allowedNames": [
-                    "today was a fairytale"
+                    "today was a fairytale",
+                    "twaf"
                 ]
             },
             {
                 "name": "You All Over Me",
                 "allowedNames": [
-                    "you all over me"
+                    "you all over me",
+                    "yaom"
                 ]
             },
             {
@@ -267,7 +278,8 @@
             {
                 "name": "Bye Bye Baby",
                 "allowedNames": [
-                    "bye bye baby"
+                    "bye bye baby",
+                    "bbb"
                 ]
             },
             {
@@ -278,6 +290,13 @@
                     "if this was a movie taylors version",
                     "if this was a movie taylor version",
                     "itwamtv"
+                ]
+            },
+            {
+                "name": "Love Story - Pop Mix",
+                "allowedNames": [
+                    "love story pop mix",
+                    "love story  pop mix"
                 ]
             }
         ]
@@ -311,13 +330,15 @@
             {
                 "name": "Back to December",
                 "allowedNames": [
-                    "back to december"
+                    "back to december",
+                    "btd"
                 ]
             },
             {
                 "name": "Back to December - Acoustic",
                 "allowedNames": [
-                    "back to december acoustic"
+                    "back to december acoustic",
+                    "btd acoustic"
                 ]
             },
             {
@@ -341,7 +362,8 @@
             {
                 "name": "The Story of Us",
                 "allowedNames": [
-                    "the story of us"
+                    "the story of us",
+                    "tsou"
                 ]
             },
             {
@@ -359,7 +381,8 @@
             {
                 "name": "Better Than Revenge",
                 "allowedNames": [
-                    "better than revenge"
+                    "better than revenge",
+                    "btr"
                 ]
             },
             {
@@ -404,7 +427,8 @@
             {
                 "name": "If This Was a Movie",
                 "allowedNames": [
-                    "if this was a movie"
+                    "if this was a movie",
+                    "itwam"
                 ]
             },
             {
@@ -423,13 +447,15 @@
             {
                 "name": "When Emma Falls In Love",
                 "allowedNames": [
-                    "when emma falls in love"
+                    "when emma falls in love",
+                    "wefil"
                 ]
             },
             {
                 "name": "I Can See You",
                 "allowedNames": [
-                    "i can see you"
+                    "i can see you",
+                    "icsy"
                 ]
             },
             {
@@ -461,7 +487,8 @@
             {
                 "name": "State of Grace",
                 "allowedNames": [
-                    "state of grace"
+                    "state of grace",
+                    "sog"
                 ]
             },
             {
@@ -486,7 +513,8 @@
             {
                 "name": "All Too Well",
                 "allowedNames": [
-                    "all too well"
+                    "all too well",
+                    "atw"
                 ]
             },
             {
@@ -512,7 +540,8 @@
             {
                 "name": "Stay Stay Stay",
                 "allowedNames": [
-                    "stay stay stay"
+                    "stay stay stay",
+                    "sss"
                 ]
             },
             {
@@ -530,7 +559,8 @@
             {
                 "name": "Sad Beautiful Tragic",
                 "allowedNames": [
-                    "sad beautiful tragic"
+                    "sad beautiful tragic",
+                    "sbt"
                 ]
             },
             {
@@ -542,7 +572,8 @@
             {
                 "name": "Everything Has Changed",
                 "allowedNames": [
-                    "everything has changed"
+                    "everything has changed",
+                    "ehc"
                 ]
             },
             {
@@ -560,13 +591,15 @@
             {
                 "name": "The Moment I Knew",
                 "allowedNames": [
-                    "the moment i knew"
+                    "the moment i knew",
+                    "tmik"
                 ]
             },
             {
                 "name": "Come Back... Be Here",
                 "allowedNames": [
-                    "come back be here"
+                    "come back be here",
+                    "cbbh"
                 ]
             },
             {
@@ -611,13 +644,15 @@
             {
                 "name": "Message In A Bottle",
                 "allowedNames": [
-                    "message in a bottle"
+                    "message in a bottle",
+                    "miab"
                 ]
             },
             {
                 "name": "I Bet You Think About Me",
                 "allowedNames": [
-                    "i bet you think about me"
+                    "i bet you think about me",
+                    "ibytam"
                 ]
             },
             {
@@ -669,7 +704,8 @@
             {
                 "name": "Welcome to New York",
                 "allowedNames": [
-                    "welcome to new york"
+                    "welcome to new york",
+                    "wtny"
                 ]
             },
             {
@@ -687,7 +723,8 @@
             {
                 "name": "Out of the Woods",
                 "allowedNames": [
-                    "out of the woods"
+                    "out of the woods",
+                    "ootw"
                 ]
             },
             {
@@ -706,7 +743,8 @@
             {
                 "name": "I Wish You Would",
                 "allowedNames": [
-                    "i wish you would"
+                    "i wish you would",
+                    "iwyw"
                 ]
             },
             {
@@ -724,7 +762,8 @@
             {
                 "name": "How You Get the Girl",
                 "allowedNames": [
-                    "how you get the girl"
+                    "how you get the girl",
+                    "hygtg"
                 ]
             },
             {
@@ -754,7 +793,8 @@
             {
                 "name": "You Are In Love",
                 "allowedNames": [
-                    "you are in love"
+                    "you are in love",
+                    "yail"
                 ]
             },
             {
@@ -787,7 +827,8 @@
             {
                 "name": "Now That We Don't Talk",
                 "allowedNames": [
-                    "now that we dont talk"
+                    "now that we dont talk",
+                    "ntwdt"
                 ]
             },
             {
@@ -799,7 +840,8 @@
             {
                 "name": "Is It Over Now?",
                 "allowedNames": [
-                    "is it over now"
+                    "is it over now",
+                    "iion"
                 ]
             }
         ]
@@ -825,7 +867,8 @@
             {
                 "name": "I Did Something Bad",
                 "allowedNames": [
-                    "i did something bad"
+                    "i did something bad",
+                    "idsb"
                 ]
             },
             {
@@ -868,13 +911,15 @@
             {
                 "name": "King of My Heart",
                 "allowedNames": [
-                    "king of my heart"
+                    "king of my heart",
+                    "komh"
                 ]
             },
             {
                 "name": "Dancing With Our Hands Tied",
                 "allowedNames": [
-                    "dancing with our hands tied"
+                    "dancing with our hands tied",
+                    "dwoht"
                 ]
             },
             {
@@ -893,13 +938,15 @@
             {
                 "name": "Call It What You Want",
                 "allowedNames": [
-                    "call it what you want"
+                    "call it what you want",
+                    "ciwyw"
                 ]
             },
             {
                 "name": "New Year's Day",
                 "allowedNames": [
-                    "new years day"
+                    "new years day",
+                    "nyd"
                 ]
             }
         ]
@@ -913,7 +960,8 @@
             {
                 "name": "I Forgot That You Existed",
                 "allowedNames": [
-                    "i forgot that you existed"
+                    "i forgot that you existed",
+                    "iftye"
                 ]
             },
             {
@@ -943,7 +991,8 @@
             {
                 "name": "I Think He Knows",
                 "allowedNames": [
-                    "i think he knows"
+                    "i think he knows",
+                    "ithk"
                 ]
             },
             {
@@ -970,7 +1019,8 @@
             {
                 "name": "Death By A Thousand Cuts",
                 "allowedNames": [
-                    "death by a thousand cuts"
+                    "death by a thousand cuts",
+                    "dbatc"
                 ]
             },
             {
@@ -982,7 +1032,8 @@
             {
                 "name": "Soon You'll Get Better",
                 "allowedNames": [
-                    "soon youll get better"
+                    "soon youll get better",
+                    "sygb"
                 ]
             },
             {
@@ -1013,7 +1064,8 @@
             {
                 "name": "It's Nice To Have A Friend",
                 "allowedNames": [
-                    "its nice to have a friend"
+                    "its nice to have a friend",
+                    "inthaf"
                 ]
             },
             {
@@ -1045,7 +1097,8 @@
             {
                 "name": "the last great american dynasty",
                 "allowedNames": [
-                    "the last great american dynasty"
+                    "the last great american dynasty",
+                    "tlgad"
                 ]
             },
             {
@@ -1057,7 +1110,8 @@
             {
                 "name": "my tears ricochet",
                 "allowedNames": [
-                    "my tears ricochet"
+                    "my tears ricochet",
+                    "mtr"
                 ]
             },
             {
@@ -1081,7 +1135,8 @@
             {
                 "name": "this is me trying",
                 "allowedNames": [
-                    "this is me trying"
+                    "this is me trying",
+                    "timt"
                 ]
             },
             {
@@ -1168,7 +1223,8 @@
             {
                 "name": "'tis the damn season",
                 "allowedNames": [
-                    "tis the damn season"
+                    "tis the damn season",
+                    "ttds"
                 ]
             },
             {
@@ -1180,7 +1236,8 @@
             {
                 "name": "no body, no crime",
                 "allowedNames": [
-                    "no body no crime"
+                    "no body no crime",
+                    "nbnc"
                 ]
             },
             {
@@ -1210,13 +1267,15 @@
             {
                 "name": "cowboy like me",
                 "allowedNames": [
-                    "cowboy like me"
+                    "cowboy like me",
+                    "clm"
                 ]
             },
             {
                 "name": "long story short",
                 "allowedNames": [
-                    "long story short"
+                    "long story short",
+                    "lss"
                 ]
             },
             {
@@ -1247,7 +1306,8 @@
             {
                 "name": "it's time to go",
                 "allowedNames": [
-                    "its time to go"
+                    "its time to go",
+                    "ittg"
                 ]
             }
         ]
@@ -1281,10 +1341,20 @@
                 "name": "Snow on the Beach",
                 "allowedNames": [
                     "snow on the beach",
-                    "snow on the beach more lana",
-                    "snow on the beach more lana del rey",
+                    "snow on the beach featuring lana del rey",
+                    "snow on the beach feat lana del rey",
+                    "sotb"
+                ]
+            },
+            {
+                "name": "Snow on the Beach (Featuring more Lana Del Rey)",
+                "allowedNames": [
+                    "snow on the beach featuring more lana del rey",
                     "snow on the beach feat more lana del rey",
-                    "snow on the beach featuring more lana del rey"
+                    "sotb featuring more lana del rey",
+                    "sotb feat more lana del rey",
+                    "snow on the beach more lana",
+                    "snow on the beach more lana del rey"
                 ]
             },
             {
@@ -1356,7 +1426,8 @@
             {
                 "name": "Bigger Than the Whole Sky",
                 "allowedNames": [
-                    "bigger than the whole sky"
+                    "bigger than the whole sky",
+                    "bttws"
                 ]
             },
             {
@@ -1380,7 +1451,8 @@
             {
                 "name": "Would've, Could've, Should've",
                 "allowedNames": [
-                    "wouldve couldve shouldve"
+                    "wouldve couldve shouldve",
+                    "wcs"
                 ]
             },
             {
@@ -1402,6 +1474,241 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "The Tortured Poets Department",
+        "allowedNames": [
+            "the tortured poets department",
+            "tortured poets department",
+            "tortured poets",
+            "ttpd"
+        ],
+        "songs": [
+            {
+                "name": "Fortnight",
+                "allowedNames": [
+                    "fortnight",
+                    "fortnight featuring post malone",
+                    "fortnight feat post malone",
+                    "fortnight post malone"
+                ]
+            },
+            {
+                "name": "The Tortured Poets Department",
+                "allowedNames": [
+                    "the tortured poets department",
+                    "tortured poets department",
+                    "tortured poets",
+                    "ttpd"
+                ]
+            },
+            {
+                "name": "My Boy Only Breaks His Favorite Toys",
+                "allowedNames": [
+                    "my boy only breaks his favorite toys",
+                    "mbobhft"
+                ]
+            },
+            {
+                "name": "Down Bad",
+                "allowedNames": [
+                    "down bad"
+                ]
+            },
+            {
+                "name": "So Long London",
+                "allowedNames": [
+                    "so long london",
+                    "sll"
+                ]
+            },
+            {
+                "name": "But Daddy I Love Him",
+                "allowedNames": [
+                    "but daddy i love him",
+                    "bdilh",
+                    "daddy i love him"
+                ]
+            },
+            {
+                "name": "Fresh Out the Slammer",
+                "allowedNames": [
+                    "fresh out the slammer",
+                    "fots"
+                ]
+            },
+            {
+                "name": "Florida!!!",
+                "allowedNames": [
+                    "florida",
+                    "florida featuring florence  the machine",
+                    "florida feat florence  the machine",
+                    "florida florence  the machine",
+                    "florida featuring florence and the machine",
+                    "florida feat florence and the machine",
+                    "florida florence and the machine"
+                ]
+            },
+            {
+                "name": "Guilty as Sin?",
+                "allowedNames": [
+                    "guilty as sin"
+                ]
+            },
+            {
+                "name": "Who’s Afraid of Little Old Me?",
+                "allowedNames": [
+                    "whos afraid of little old me",
+                    "waolom"
+                ]
+            },
+            {
+                "name": "I Can Fix Him (No Really I Can)",
+                "allowedNames": [
+                    "i can fix him  no really i can",
+                    "i can fix him",
+                    "i can fix him no really i can",
+                    "icfh nric",
+                    "icfhnric",
+                    "icfh"
+                ]
+            },
+            {
+                "name": "loml",
+                "allowedNames": [
+                    "loml"
+                ]
+            },
+            {
+                "name": "I Can Do It With a Broken Heart",
+                "allowedNames": [
+                    "i can do it with a broken heart",
+                    "icdiwabh"
+                ]
+            },
+            {
+                "name": "The Smallest Man Who Ever Lived",
+                "allowedNames": [
+                    "the smallest man who ever lived",
+                    "tsmwel"
+                ]
+            },
+            {
+                "name": "The Alchemy",
+                "allowedNames": [
+                    "the alchemy",
+                    "alchemy"
+                ]
+            },
+            {
+                "name": "Clara Bow",
+                "allowedNames": [
+                    "clara bow"
+                ]
+            },
+            {
+                "name": "The Black Dog",
+                "allowedNames": [
+                    "the black dog",
+                    "black dog"
+                ]
+            },
+            {
+                "name": "imgonnagetyouback",
+                "allowedNames": [
+                    "imgonnagetyouback",
+                    "im gonna get you back"
+                ]
+            },
+            {
+                "name": "The Albatross",
+                "allowedNames": [
+                    "the albatross",
+                    "albatross"
+                ]
+            },
+            {
+                "name": "Chloe or Sam or Sophia or Marcus",
+                "allowedNames": [
+                    "chloe or sam or sophia or marcus",
+                    "cososom",
+                    "chloe et al"
+                ]
+            },
+            {
+                "name": "How Did It End?",
+                "allowedNames": [
+                    "how did it end",
+                    "hdie"
+                ]
+            },
+            {
+                "name": "So High School",
+                "allowedNames": [
+                    "so high school",
+                    "shs"
+                ]
+            },
+            {
+                "name": "I Hate It Here",
+                "allowedNames": [
+                    "i hate it here",
+                    "ihih"
+                ]
+            },
+            {
+                "name": "thanK you aIMee",
+                "allowedNames": [
+                    "thank you aimee"
+                ]
+            },
+            {
+                "name": "I Look in People's Windows",
+                "allowedNames": [
+                    "i look in peoples windows",
+                    "ilipw"
+                ]
+            },
+            {
+                "name": "The Prophecy",
+                "allowedNames": [
+                    "the prophecy",
+                    "prophecy"
+                ]
+            },
+            {
+                "name": "Cassandra",
+                "allowedNames": [
+                    "cassandra"
+                ]
+            },
+            {
+                "name": "Peter",
+                "allowedNames": [
+                    "peter"
+                ]
+            },
+            {
+                "name": "The Bolter",
+                "allowedNames": [
+                    "the bolter",
+                    "bolter"
+                ]
+            },
+            {
+                "name": "Robin",
+                "allowedNames": [
+                    "robin"
+                ]
+            },
+            {
+                "name": "The Manuscript",
+                "allowedNames": [
+                    "the manuscript",
+                    "manuscript"
+                ]
+            }
+        ]
+        
     }
-            
 ]
