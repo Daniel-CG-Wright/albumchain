@@ -12,7 +12,7 @@ const { clearSongs, areStringsSimilarEnough } = require('../util.js');
 // normally keep on, but for testing purposes can be turned off
 const disallowSamePlayerTwiceInARow = true;
 // use the string similarity library to allow minor mistakes
-const similarityThreshold = 0.80; // 0.8 is natural, 1 is exact
+const similarityThreshold = 0.65; // 0.8 is natural, 1 is exact
 
 const numberOfAlbums = data.length;
 
