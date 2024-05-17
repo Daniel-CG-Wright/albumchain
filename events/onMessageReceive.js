@@ -32,12 +32,18 @@ module.exports = {
 			return;
 		}
 		
-		if (wasValid) {
-			await addUserCorrectAnswer(author.id);
-			await message.react('✅');
-		} else {
-			await addUserIncorrectAnswer(author.id);
-			await message.react('❌');
+		try {
+			if (wasValid) {
+				await addUserCorrectAnswer(author.id);
+				await message.react('✅');
+			} else {
+				await addUserIncorrectAnswer(author.id);
+				await message.react('❌');
+			}
+		}
+		catch (error) {
+			console.error(error);
+			await message.channel.send("There was an error while processing your answer. Please try again and contact @danzeman");
 		}
 
 		if (responseMessage) {
