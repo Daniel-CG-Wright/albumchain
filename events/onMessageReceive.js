@@ -43,7 +43,7 @@ module.exports = {
 		}
 		catch (error) {
 			console.error(error);
-			await message.channel.send("There was an error while processing your answer. Please try again and contact @danzeman");
+			await message.channel.send(`There was an error while processing your answer, <@${author.id}>. The message was: ${message.content}. Please try again and contact @danzeman`);
 		}
 
 		if (responseMessage) {
