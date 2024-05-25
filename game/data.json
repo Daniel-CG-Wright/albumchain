@@ -121,7 +121,8 @@
             {
                 "name": "Fifteen",
                 "allowedNames": [
-                    "fifteen"
+                    "fifteen",
+                    "15"
                 ]
             },
             {
@@ -1085,7 +1086,8 @@
             {
                 "name": "the 1",
                 "allowedNames": [
-                    "the 1"
+                    "the 1",
+                    "the one"
                 ]
             },
             {
@@ -1123,7 +1125,8 @@
             {
                 "name": "seven",
                 "allowedNames": [
-                    "seven"
+                    "seven",
+                    "7"
                 ]
             },
             {
